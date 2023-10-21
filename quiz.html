@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Quiz Website</title>
+     <link rel="stylesheet" href="./quiz-style.css" />
+ </head>
+ <body>
+   <div class="main-con">
+      <h1 class="title">Nerd Knowledge</h1>
+      <div class="question-con">
+         <p class="question">Who founded Tesla?</p>
+         <div class="question-options">
+            <label class="question-item">
+               <input type="radio" value="A" name="ans" id="item">
+               Mark Zuckerberg
+            </label>
+            <label class="question-item">
+               <input type="radio" id="item" name="ans" value="B" >
+               Tim Cook
+            </label>
+            <label class="question-item">
+               <input type="radio" id="item" name="ans" value="C" data-correct>
+               Elon Musk
+            </label>
+            <label class="question-item">
+               <input type="radio" id="item" name="ans" value="D" >
+               Jeff Bezos
+            </label>
+         </div>
+         <div class="question-status">
+            <label class="question-item correct-ans">
+               Correct! Elon Musk founded Tesla in 2003.
+            </label>
+            <label class="question-item wrong-ans">
+               Oops, you answered the question wrong.
+            </label>
+         </div>
+      </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./quiz.js"></script>
+</body>
+</html>
